@@ -1,7 +1,7 @@
 FROM phusion/baseimage:0.9.22
 
 EXPOSE 8080
-EXPOSE 10000
+EXPOSE 31275
 
 ENV CATALINA_HOME /opt/tomcat
 ENV GTS_HOME /opt/opengts
@@ -40,8 +40,6 @@ RUN mkdir -p /var/run/mysqld && \
 
 WORKDIR /docker
 COPY bin bin
-
-RUN apt-get update && apt-get install -y --allow-unauthenticated net-tools && apt-get clean
 
 ENTRYPOINT ["bin/entrypoint.sh"]
 CMD ["start"]
