@@ -4,7 +4,8 @@
 ## Build
 
 ```
-docker build -t agrogts/opengts src
+docker build -t agrogts/opengts:latest src
+docker push agrogts/opengts:latest
 ```
 
 
