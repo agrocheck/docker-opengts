@@ -4,13 +4,13 @@
 ## Build
 
 ```
-docker build -t agrogts/opengts:latest src
-docker push agrogts/opengts:latest
+docker build -t agrocheck/opengts:latest src
+docker push agrocheck/opengts:latest
 ```
 
 
 ## Execution
 
 ```
-docker run -d -p 8080:8080 -p 31275:31275 --name opengts agrogts/opengts start
+docker run -d -p 8080:8080 -p 31275:31275 --name opengts agrocheck/opengts start
 ```
