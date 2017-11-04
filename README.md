@@ -15,12 +15,12 @@ docker logout
 
 ```
 docker run \
-    -d \
-    -p 80:8080 \
-    -p 31275:31275 \
-    -p 31275:31275/udp \
-    --name opengts \
-    --restart always \
-    agrocheck/opengts:latest \
-    start
+  -d \
+  -p 80:8080 \
+  -p 31275:31275 \
+  -p 31275:31275/udp \
+  --name opengts \
+  --restart always \
+  agrocheck/opengts:latest \
+  start
 ```
