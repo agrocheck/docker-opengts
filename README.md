@@ -5,7 +5,9 @@
 
 ```
 docker build -t agrocheck/opengts:latest src
+docker login
 docker push agrocheck/opengts:latest
+docker logout
 ```
 
 
