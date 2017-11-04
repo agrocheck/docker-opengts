@@ -2,6 +2,7 @@ FROM phusion/baseimage:0.9.22
 
 EXPOSE 8080
 EXPOSE 31275
+EXPOSE 31275/udp
 
 ENV CATALINA_HOME /opt/tomcat
 ENV GTS_HOME /opt/opengts
